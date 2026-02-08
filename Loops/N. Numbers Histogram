@@ -1,1 +1,7 @@
-##
+## awit solve without arr
+
+S = input()
+A = int(input())
+nums= list(map(int, input().split()))
+for i in nums :
+    print (S * i , end = '\n')
