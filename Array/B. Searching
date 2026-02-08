@@ -1,1 +1,12 @@
-
+N = int(input())
+arr = list(map(int, input().split()))
+X = int(input())
+pos =0
+for i in arr:
+    if X == i :
+        print(pos)
+        break
+    else:
+        pos+= 1
+else :
+    print(-1)
