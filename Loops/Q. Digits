@@ -1,0 +1,27 @@
+## should be without arr 
+
+
+
+T = int(input())  # 2
+arr = []
+arr2 = []
+for i in range(T):
+    arr.append(int(input()))  # 174                                 86
+for x in arr:  # 174
+    if x == 0 :
+        print(0)
+        continue
+    for y in range(10):
+        if x >= 10:
+            Z = x % 10  # z= 4,      7         
+            arr2.append(Z)  # arr=[4,    7
+            x //= 10  # 17          1
+
+        elif x > 0 and x < 10 :
+            arr2.append(x)           # arr=[4,    7
+            x //= 10
+    
+        if x == 0:  # false
+            print(*arr2)
+            arr2 = []
+            break
