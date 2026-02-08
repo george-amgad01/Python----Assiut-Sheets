@@ -1,0 +1,12 @@
+X = int(input())
+if X == 2:
+    print('YES')
+elif X<2 :
+    print('NO')
+else :
+    for i in range(2,X):
+        if X % i == 0 :
+            print('NO')
+            break
+    else :
+        print('YES')
