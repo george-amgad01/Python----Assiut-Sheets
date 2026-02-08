@@ -1,0 +1,17 @@
+summ = 0
+for i in range (100) :
+    A,B = map(int,input().split())
+    if A >= B :
+        maxi = A 
+        mini = B 
+    if A<=B :
+        maxi = B 
+        mini = A
+    if A>0 and B>0 :
+        for i in range (mini,maxi+1) :
+            summ += i
+            print (i,end=" ")
+        print (f"sum ={summ}")
+        summ = 0
+    if A<=0 or B<=0 :
+        break
