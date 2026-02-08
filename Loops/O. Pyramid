@@ -1,0 +1,4 @@
+A = int(input())
+S= '*'
+for i in range (1, A+1) :
+    print (S * i , end = '\n')
