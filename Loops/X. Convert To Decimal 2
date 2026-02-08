@@ -1,0 +1,17 @@
+N = int(input())  
+arr = []
+count = 0
+for i in range (N) :
+    n = int(input()) 
+    for y in range (32) :
+        n =int(n) / 2              
+        if n != int(n) and n > 0 :  
+            arr.append(1)  
+        if n == 0 :   
+            for x in arr :
+                if x == 1 :
+                    count+=1
+            print (2**count-1)
+            count = 0
+            arr=[]
+            break
