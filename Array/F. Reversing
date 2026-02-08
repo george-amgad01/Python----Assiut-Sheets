@@ -1,0 +1,8 @@
+N = int(input())  
+arr = list(map(int, input().split()))  
+arr2 = []
+x=0
+for i in range (1,N+1):    
+    arr2.insert(-i,arr[x])  
+    x+=1
+print(*arr2)
