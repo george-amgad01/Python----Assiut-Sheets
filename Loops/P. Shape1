@@ -1,1 +1,12 @@
 ## wait solve without arr 
+
+
+
+A = int(input())
+S= '*'
+arr = []
+for x in range(1,A+1) :
+    arr.append(x)
+    arr.sort(reverse=True)
+for i in arr :
+    print (S * i , end = '\n')
