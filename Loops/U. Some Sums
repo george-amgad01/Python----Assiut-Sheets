@@ -1,0 +1,28 @@
+N,A,B = map(int,input().split())
+summ =summ1 =summ2 = summ3 = summ4 = 0
+for i in range (1,N+1) :
+    if i <= 9 :
+        if i >=A and i <= B :
+            summ += i
+    if i>=10 and i <= 99 :
+        s1 = i %10
+        s2 = i // 10
+        if s1 + s2 >=A and s1 + s2 <=B :
+            summ1+= i
+    if i>=100 and i <= 999 :
+        h1 = i % 10
+        h2 = i // 10 % 10
+        h3 = i // 100
+        if h1 + h2 +h3 >= A and h1 + h2 + h3 <=B :
+            summ2+= i
+    if i>=1000 and i <= 9999 :
+        th1 = i%10
+        th2 = i//10 %10
+        th3 = i//100 %10
+        th4 = i//1000
+        if th1 + th2 +th3 + th4 >=A and th1 + th2 + th3 +th4 <=B :
+            summ3+= i
+    if i == 10000 :
+        if 1 >=A and 1 <=B :
+            summ4 = 10000
+print(summ + summ1 + summ2 + summ3 + summ4)
