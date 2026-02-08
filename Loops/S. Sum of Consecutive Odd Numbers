@@ -2,8 +2,8 @@ T = int(input())
 summ = 0
 for i in range (T) :
     X,Y = map(int,input().split())
-    for i in range (min(X,Y)+1,max(X,Y)) :   # 4 -9  5 8
-        if i % 2 != 0: # 5  false   7 false
-            summ += i   # 5    5   7 
+    for i in range (min(X,Y)+1,max(X,Y)) : 
+        if i % 2 != 0:#
+            summ += i 
     print (summ)
     summ = 0
