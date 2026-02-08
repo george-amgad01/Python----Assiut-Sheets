@@ -1,0 +1,9 @@
+N = int (input())
+A = list(map(int,input().split()))
+mini = A[0]
+pos = 1
+for i in range(N) :
+    if A[i] < mini :
+        mini = A[i]
+        pos = i+1
+print(mini,pos)
