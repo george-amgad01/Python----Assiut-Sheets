@@ -1,0 +1,14 @@
+N = int(input())
+arr = list(map(int, input().split()))
+mini = arr[0]
+freq = 0
+for i in range (N) :
+    if arr[i]<mini :
+        mini = arr[i]
+for x in range (N) :
+    if arr[x]==mini :
+        freq += 1
+if freq % 2 != 0 :
+    print("Lucky")
+else :
+    print("Unlucky")
