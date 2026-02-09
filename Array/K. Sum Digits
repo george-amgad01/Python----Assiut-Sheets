@@ -1,0 +1,19 @@
+N = int(input())
+X = input()
+arr = []
+summ = 0
+for i in range(N) :
+    arr.append(int(X[i]))
+for x in arr :
+    summ += x
+print(summ)
+
+
+
+## without arr
+N = int(input())
+X = input()
+summ = 0
+for i in range(N) :
+    summ+= int(X[i])
+print(summ)
