@@ -1,0 +1,9 @@
+a,b = map(int,input().split())
+result = abs(a-b)
+if a == 0 and b == 0:
+    print('NO')
+else :
+    if result == 1 or result == 0 :
+        print("YES")
+    else :
+        print("NO")
