@@ -1,0 +1,12 @@
+N = int(input())
+arr = list(map(int, input().split()))
+mini = maxi = 0
+for i in range (N) :
+    j = i
+    if arr[i] < arr[mini] :
+        mini = i
+    if arr[j] > arr[maxi] :
+        maxi = j
+
+arr[mini], arr[maxi] = arr[maxi], arr[mini]
+print(*arr)
