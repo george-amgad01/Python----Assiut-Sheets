@@ -1,1 +1,18 @@
-##
+N = input()
+X = N[::-1]
+if N[0] == '0' :
+    N = N.lstrip('0')
+    X = N[::-1]
+    print(int(X))
+    print('NO')
+elif X [-1] == '0' :
+    X= int(X)
+    print(X)
+    print('NO')
+elif N == X :
+    print(int(X))
+    print('YES')
+else :
+    X= int(X)
+    print(X)
+    print('NO')
