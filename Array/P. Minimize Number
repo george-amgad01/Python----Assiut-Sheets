@@ -1,0 +1,19 @@
+N = int(input())
+arr = list(map(int, input().split()))
+arr2 = []
+found = True
+summ = 0
+for x in arr :
+    if x % 2 != 0 :
+        print(0)
+        found = False
+        break
+    else :
+        j = x
+        while j % 2 == 0 :
+            j = j//2
+            summ+= 1
+        arr2.append(summ)
+        summ = 0
+if found == True :
+    print(min(arr2))
