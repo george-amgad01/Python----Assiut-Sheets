@@ -1,0 +1,6 @@
+a,b,c,d = map(int,input().split())
+multi = (a*b*c*d)%100
+if multi >= 10 :
+    print(multi)
+else :
+    print(f"0{multi}")
