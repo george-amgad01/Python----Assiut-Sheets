@@ -1,0 +1,4 @@
+a,b = map(int,input().split())
+summ = a % 10
+summ += b % 10
+print (summ)
