@@ -1,0 +1,16 @@
+a,s,b = input().split()
+if s == ">" :
+    if int(a) > int(b) :
+        print("Right")
+    else :
+        print("Wrong")
+elif s == "<" :
+    if int(a) < int(b) :
+        print("Right")
+    else :
+        print("Wrong")
+elif s == "=" :
+    if int(a) == int(b) :
+        print("Right")
+    else :
+        print("Wrong")
