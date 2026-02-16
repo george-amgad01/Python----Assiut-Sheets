@@ -1,0 +1,35 @@
+a,b,c = map(int,input().split())
+if a<=b and a<=c :
+    if b<=c :
+        mini = a
+        mid = b
+        max = c
+    else :
+        mini = a
+        mid = c
+        max = b
+elif b <=a and b<=c :
+    if a <=c :
+        mini = b
+        mid = a
+        max = c
+    else :
+        mini = b
+        mid = c
+        max = a
+elif c <=a and c <=b :
+    if b<= a :
+        mini = c
+        mid = b
+        max = a
+    else :
+        mini = c
+        mid = a
+        max = b
+print(mini)
+print(mid)
+print(max)
+print()
+print(a)
+print(b)
+print(c)
