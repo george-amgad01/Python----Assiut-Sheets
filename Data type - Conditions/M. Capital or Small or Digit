@@ -1,0 +1,9 @@
+x= input()
+if ord (x) >= 65 and ord (x) <= 90 :
+    print("ALPHA")
+    print("IS CAPITAL")
+elif ord (x) >= 97 and ord (x) <= 122 :
+    print("ALPHA")
+    print("IS SMALL")
+elif ord (x) >= 48 and ord (x) <= 57 :
+    print("IS DIGIT")
