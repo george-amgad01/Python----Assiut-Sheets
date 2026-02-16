@@ -1,0 +1,6 @@
+l1,l2,r1,r2 = map(int,input().split())
+mini = max(l1,r1)
+maxi = min(l2,r2)
+if mini <= maxi and maxi >= mini:
+    print(mini,maxi)
+else :print(-1)
