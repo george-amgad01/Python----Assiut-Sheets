@@ -1,0 +1,5 @@
+N = float (input())
+if N % int(N)== 0:
+    print(f"int {int(N)}")
+else :
+    print(f"float {int(N)} {N-int(N):.3f}")
