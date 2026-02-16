@@ -1,0 +1,18 @@
+x= int(input())
+if x >= 365 :
+    year = x // 365
+    month = x % 365 // 30
+    day = x % 365 % 30
+    print(f"{year} years")
+    print(f"{month} months")
+    print(f"{day} days")
+elif x >= 30 :
+    month = x // 30
+    days = x % 30
+    print("0 years")
+    print(f"{month} months")
+    print(f"{days} days")
+elif x <30 :
+    print("0 years")
+    print("0 months")
+    print(f"{x} days")
