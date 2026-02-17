@@ -1,1 +1,13 @@
-
+T = int(input())
+arr = []
+arr2 = []
+for x in range (T) :
+    N= int(input())                  
+    arr = list(map(int, input().split()))
+    for y in range (N) : 
+        for z in range (y+1,N) : 
+            result = arr [y] + arr[z] + z - y
+            arr2.append(result)
+            result = 0
+    print(min(arr2))
+    arr2 = []
