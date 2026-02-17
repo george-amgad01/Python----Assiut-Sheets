@@ -1,0 +1,15 @@
+N = int(input())
+arr = list(map(int, input().split()))
+arr2 = list(map(int, input().split()))
+found = True
+arr.sort()
+arr2.sort()
+for i in  range(N):
+    if arr2[i] == arr[i]:
+        continue
+    else :
+        found = False
+        print('no')
+        break
+if found:
+    print('yes')
