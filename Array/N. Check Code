@@ -1,1 +1,10 @@
-
+a,b = map(int,input().split())  
+word = input()
+if word[a] == "-" :
+    word = word.replace(word[a],"", 1)
+    if word.isdecimal() :
+        print("Yes")
+    else :
+        print("No")
+else :
+    print("No")
