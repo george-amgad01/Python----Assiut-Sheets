@@ -1,0 +1,7 @@
+T = int(input())
+for i in range(T) :
+    N = input()
+    if len(N) > 10 :
+        print(f"{N[0]}{len(N) - 2}{N[-1]}")
+    else :
+        print(N)
