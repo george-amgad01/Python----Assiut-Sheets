@@ -1,1 +1,16 @@
+a,b = map(int,input().split())
+ceil = round = 0
 
+if a/b == a//b  :
+    ceil = a//b
+else :
+    ceil = a//b +1
+
+if a/b >= a//b + 0.5 :
+    round = a//b +1
+else :
+    round = a//b
+
+print(f"floor {a} / {b} = {a//b}")
+print(f"ceil {a} / {b} = {ceil}")
+print(f"round {a} / {b} = {round}")
