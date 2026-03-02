@@ -1,0 +1,9 @@
+N = int(input())
+j = N -1
+summ = summ2 = 0
+for i in range(N):
+    arr = list(map(int, input().split()))
+    summ += arr[i]
+    summ2 += arr[j]
+    j-=1
+print(abs(summ - summ2))
