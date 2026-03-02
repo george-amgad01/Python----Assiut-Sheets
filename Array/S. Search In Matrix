@@ -1,0 +1,10 @@
+N,M = map(int,input().split())
+arr2=[]
+for i in range(N):
+    arr = list(map(int,input().split()))
+    arr2 += arr
+num = int(input())
+if num in arr2:
+    print("will not take number")
+else :
+    print("will take number")
