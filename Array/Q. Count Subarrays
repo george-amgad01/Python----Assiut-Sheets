@@ -1,0 +1,18 @@
+T = int(input())
+summ = 0
+for w in range (T) :
+    N =int(input())
+    arr = list(map(int,input().split())) 
+    for i in range (N) :     
+        j= i
+        for x in range (N) :   
+            if j == N - 1 :
+                if arr[x:] == sorted(arr[x:]) :
+                    summ += 1
+                break
+            else :
+                if arr[x:j+1] == sorted(arr[x:j+1]) :
+                    summ+=1
+                j+=1
+    print(summ)
+    summ = 0
