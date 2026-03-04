@@ -1,0 +1,10 @@
+s = input()
+s = list(s)
+for i in range(len(s)) :
+    if s[i] == ',' :
+        s[i] = " "
+    elif s[i].islower() == True :
+        s[i] = s[i].upper()
+    elif s[i].isupper() == True :
+        s[i] = s[i].lower()
+word = "".join(s)
