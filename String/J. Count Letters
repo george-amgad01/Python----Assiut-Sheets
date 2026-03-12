@@ -1,0 +1,7 @@
+s= input()
+freq = [0]*26
+for i in s:
+    freq[ord(i)-97] += 1
+for i in range(len(freq)) :
+    if freq[i] > 0:
+     print(f"{chr(i+97)} : {freq[i]}")
