@@ -1,0 +1,21 @@
+T = int(input())
+for i in range(T):
+    s,t = input().split()
+    maxi = max(len(s),len(t))
+    w = ""
+    if len(s) >= len(t):
+        for j in range(maxi):
+            if j == len(t) :
+                w += s[j:]
+                break
+            else :
+                w+= s[j]+t[j]
+        print(w)
+    else :
+        for j in range(maxi):
+            if j == len(s) :
+                w +=t[j:]
+                break
+            else :
+                w += s[j]+t[j]
+        print(w)
