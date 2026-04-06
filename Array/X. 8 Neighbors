@@ -1,0 +1,65 @@
+n,m = map(int,input().split())
+found = True
+arr2 = []
+for x in range (n) :
+    arr = list(input())
+    arr2.append(arr)
+i,j = map(int,input().split())
+i-=1
+j-=1
+
+if i-1 >= 0 and j+1 <= m-1 :
+    if arr2[i-1][j+1] == "x" :
+        pass
+    else :
+        found = False
+
+if i-1 >= 0 and j-1 >= 0 :
+    if arr2[i-1][j-1] == "x" :
+        pass
+    else :
+        found = False
+
+if i+1 <=n-1 and j-1 >=0 :
+    if arr2[i+1][j-1] == "x" :
+        pass
+    else :
+        found = False
+
+if i+1 <=n-1 and j+1 <= m-1 :
+    if arr2[i+1][j+1] == "x" :
+        pass
+    else :
+        found = False
+
+        ############
+
+if i+1 <= n-1 :
+    if arr2[i+1][j] == "x" :
+        pass
+    else :
+        found = False
+
+if i-1 >=0 :
+    if arr2[i-1][j] == "x" :
+        pass
+    else :
+        found = False
+
+if j+1 <= m-1 :
+    if arr2[i][j+1] == "x" :
+        pass
+    else :
+        found = False
+
+if j-1 >= 0 :
+    if arr2[i][j-1] == "x" :
+        pass
+    else :
+        found = False
+
+if found :
+    print("yes")
+
+else :
+    print("no")
