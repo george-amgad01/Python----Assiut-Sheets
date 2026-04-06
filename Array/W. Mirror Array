@@ -1,0 +1,10 @@
+n,m = map(int,input().split())
+arr2 = []
+for i in range (n) :
+    arr = list(map(int,input().split()))
+    arr2.append(arr)
+for i in range (n) :
+    for j in range (m) :
+        print(arr2[i][-(j+1)],end = " ")
+        if j == m-1 :
+            print()
