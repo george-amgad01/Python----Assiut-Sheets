@@ -1,0 +1,11 @@
+s = input()
+t ='hello'
+i=0
+for x in s :
+    if i <len(t) and t[i] == x :
+        i+=1
+if i == len(t):
+    print('YES')
+else :
+    print('NO')
+  
