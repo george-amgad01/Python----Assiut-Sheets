@@ -6,5 +6,7 @@ All sheets will be solved and added gradually.
 ## Progress
 - Data type - Conditions (Completed)
 - Loops (Completed)
-- Arrays (In Progress)
+- Arrays (Completed)
+- Strings (In Progress)
+
 
