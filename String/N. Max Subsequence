@@ -1,0 +1,9 @@
+n = int(input())
+s = input()
+x = n
+for i in range (n):
+    if i +1 == n :
+        break
+    if s[i] == s[i+1] :
+        x-=1
+print(x)
