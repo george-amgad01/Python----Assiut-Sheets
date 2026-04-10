@@ -1,0 +1,16 @@
+s = input().lower()
+count = 0
+arr=[0]*5
+for i in range (len(s)):
+    if s[i] == "e" :
+        arr[0] +=1
+    if s[i] == "g" :
+        arr[1] +=1
+    if s[i] == "y" :
+        arr[2] +=1
+    if s[i] == "p" :
+        arr[3] +=1
+    if s[i] == "t":
+        arr[4] +=1
+        count += 1
+print(min(arr))
