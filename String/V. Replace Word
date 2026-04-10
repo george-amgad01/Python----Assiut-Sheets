@@ -1,0 +1,6 @@
+s = input()
+if "EGYPT" in s :
+    s = s.replace("EGYPT"," ")
+    print(s)
+else :
+    print(s)
