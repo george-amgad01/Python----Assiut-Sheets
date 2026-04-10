@@ -1,0 +1,8 @@
+s = input()
+s = s.split()
+arr =[]
+for i in range(len(s)):
+    w=s[i]
+    w = w[::-1]
+    arr.append(w)
+print(*arr)
