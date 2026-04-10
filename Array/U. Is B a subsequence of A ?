@@ -1,0 +1,11 @@
+n,m = map(int,input().split())
+arr = list(map(int,input().split()))
+arr2 = list(map(int,input().split()))
+i = 0
+for x in arr:
+    if i < m and x == arr2[i] :
+        i += 1
+if i == m :
+    print("YES")
+else :
+    print("NO")
